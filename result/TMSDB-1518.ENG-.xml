@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+		xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+
+	http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.10">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-F', % company_code, 'Driving log at all times', '', 'VCRM', 'TMU');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.20">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-G', % company_code, 'Statistical Information', '', 'VCRM', 'TMU');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.30">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-H', % company_code, 'ECU status information', '', 'VCRM', 'TMU');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.40">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-I', % company_code, 'VCRM trouble information', '', 'VCRM', 'TMU');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.50">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-M', % company_code, 'Utilization information of functions', '', 'VCRM', 'TMU');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.60">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-N', % company_code, 'Standard log', '', 'VCRM', 'TMU');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.70">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-O', % company_code, 'System log request', '', 'VCRM', 'VCRM');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.80">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-P', % company_code, 'Error log request', '', 'VCRM', 'VCRM');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.90">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-S', % company_code, 'Full log transmit', '', 'VCRM', 'VCRM');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.100">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-T', % company_code, 'Error log transmit', '', 'VCRM', 'VCRM');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.110">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+Insert into OMSADM.BT_SNRO(SNRO_ID, COMPANY_CODE, SNRO_NM, SNRO_DESC, SNRO_GRP_ID, SNRO_CLASS)
+values('VCRM-U', % company_code, 'Confirm for log transmit', '', 'VCRM', 'VCRM');
+									</sql>
+
+								</changeSet>
+
+								<changeSet author="Kevin" id="SPRINT_48.TMSDB-1518.120">
+
+									<preConditions  onFail="MARK_RAN">
+
+										<sqlCheck expectedResult="0">
+
+											
+										</sqlCheck>
+
+									</preConditions>
+
+									<comment>
+
+										TMSDB-1518
+									</comment>
+
+									<sql>
+
+										
+
+									</sql>
+
+								</changeSet>
+
+								</databaseChangeLog>
