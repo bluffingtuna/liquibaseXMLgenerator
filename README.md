@@ -5,7 +5,7 @@ One of my duty at work was to create XML files for liquibase for ORACLE DB.
 
 Liquibase is an open source database-independent library for tracking, managing and applying database schema changes.
 
-I normally have to create more than 100 different files for every SQL scripts that need to be deployed, and it was very time consuming.
+We normally have 100s of SQL scripts every week that need to be deployed, and it was time consuming.
 
 By using Node.Js, I was able to create an application that will generate XML files based on SQL scripts.
 
