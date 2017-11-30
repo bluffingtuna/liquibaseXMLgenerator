@@ -52,3 +52,63 @@ function fibs(num) {
 	}
 	return retarr;
 }
+
+#pair_sum
+
+function pair_sum(arr, k) {
+	let seen = new Set();
+	let answer = new Set();
+	for (let i=0; i<arr.length; i++){
+		let num = arr[i];
+		if (seen.has(k-num)){
+			answer.add([Math.min(arr[i], k-arr[i]), Math.max(arr[i], k-arr[i])]);
+		} else {
+			seen.add(num);
+		}
+	}
+	return answer;
+}
+
+#productify
+
+function productify(arr) {
+	let prod = arr.map(x=>1);
+	lower_prod=1;
+	for (let i=0; i<arr.length; i++){
+		prod[i]= prod[i]*lower_prod;
+		lower_prod=lower_prod*arr[i];
+	}
+	upper_prod=1;
+	for (let i=arr.length-1; i>-1; i--){
+		prod[i]= prod[i]*upper_prod;
+		upper_prod=uppoer_prod*arr[i];
+	}
+	return prod;
+}
+
+#rand7
+function rand5(){
+	return Math.floor(Math.random()*5);
+}
+
+function rand7(){
+	let num = 5*rand5()+rand5();
+	if (num<21){
+		return num%7;
+	} else {
+	rand7();
+	}
+}
+
+function rand25(){
+	let num = 5*rand5()+rand5();
+	if (num<21){
+		return num;
+	} else {
+		rand25();
+	}
+}
+
+
+
+
