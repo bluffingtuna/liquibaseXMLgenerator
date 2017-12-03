@@ -96,19 +96,101 @@ function rand7(){
 	if (num<21){
 		return num%7;
 	} else {
-	rand7();
-	}
-}
-
-function rand25(){
-	let num = 5*rand5()+rand5();
-	if (num<21){
-		return num;
-	} else {
-		rand25();
+	return rand7();
 	}
 }
 
 
+#move_zeros
+function move_zeros(arr){
+	let answerarr=[];
+	let zerocount=0;
+	let len = arr.length;
+	for (let i=0; i<len; i++){
+		if (arr[i]==0){
+			zerocount++;
+		} else {
+			answerarr.push(arr[i]);
+		}
+	}
+	while (zerocount!=0){
+		answerarr.push(0);
+		zerocount--;
+	}
+	return answerarr;
+}
+
+#binary
+13%2 = 1
+6%2 = 0
+3%2 = 1
+1%2 = 1
+
+1101 = (1*2^3)+(1*2^2)+(1*2^1)+(1*2^0)
+
+function binary(num){
+	temp = [];
+	while (num!= 0){
+		temp.unshift(num%2);
+		num=Math.floor(num/2);
+	}
+	return temp.join('')
+}
+
+#permutation
+
+function permutation(array) {
+
+}
+
+#sum_rec
+function sum_rec(arr){
+	if (arr.length==0){
+		return 0
+	}
+	return arr[0]+ sum_rec(arr.slice(1, arr.length))
+}
+
+#weighted_random_index
+function weighted_random_index(arr) {
+	temp=[];
+	for (let i = 0; i<arr.length; i++){
+		let num = arr[i]
+		while (num!=0){
+			temp.push(arr[i]);
+			num--;
+		}
+	}
+	console.log(temp)
+	let picked= temp[Math.floor(Math.random()*temp.length)]
+	return arr.indexOf(picked)
+}
+
+#uniq_sub
+function uniq_sub(word){
+	let temp = new Set();
+	for (let i=0; i<word.length; i++){
+		let sub = word[i];
+		temp.add(sub)
+		for (let j=1; j<word.length; j++){
+			sub+=word[j];
+			temp.add(sub);
+		}
+	}
+	let ans =[];
+	temp.forEach(x=>ans.push(x));
+	return ans;
+}
+
+#find_missing_number
+function find_missing_number(arr1, arr2){
+	let temp= new Set();
+	arr1.forEach(x=> temp.add(x))
+	for (let i=0; i<arr2.length; i++){
+		if (temp.has(arr2[i])==false){
+			return arr2[i]	
+		}
+	}	
+}
 
 
