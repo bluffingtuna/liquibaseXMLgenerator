@@ -194,3 +194,32 @@ function find_missing_number(arr1, arr2){
 }
 
 
+function Node(value) {
+
+}
+
+function LinkedList(){
+	this.root = null;
+
+}
+
+
+
+//Algorithms
+
+//Bubble Sort
+
+function bubble_sort(arr){
+	let sorted = false;
+	until (sorted) {
+		sorted = true;
+
+		(0...(arr.length-1)).each do |i|
+			if arr[i] > arr[i+1]
+				arr[i], arr[i +1] = arr[i+1], arr[i]
+			sorted= false
+	}
+
+}
+
+
