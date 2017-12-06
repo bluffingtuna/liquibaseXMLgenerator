@@ -203,7 +203,55 @@ function LinkedList(){
 
 }
 
+//Linked List
 
+function Node(value){
+	this.value = value;
+	this.next = null;
+}
+
+function LinkedList(){
+	this.root= null;
+	this.addStart= function(value) {
+		let node = new Node(value);
+		node.next = this.root;
+		this.root = node;
+	};
+	this.addEnd= function(value) {
+		let node = new Node(value);
+		if (this.root == null){
+			return this.root= node;
+		};
+		let curr = this.root;
+		while (curr.next != null){
+			curr = curr.next;
+		};
+		curr.next = node;
+	};
+	this.addAt= function(value, index){
+		let node = new Node(value);
+		let curr = this.root;
+		let i = 0
+		while (i !== index) {
+			curr == curr.next;
+			i++;
+			if (curr===null){
+				return false
+			};
+		}
+		node.next = curr;
+		curr = node;
+	};
+
+	this.deleteStart= function() {}
+	this.deleteEnd= function() {}
+	this.deleteAt= function(index) {}
+
+	this.get= function(index) {}
+
+	this.indexOf= function(value) {}
+	this.print= function(filename) {}
+}
 
 //Algorithms
 
@@ -221,5 +269,8 @@ function bubble_sort(arr){
 	}
 
 }
+
+//next_largest
+//Given a node in a Binary Search Tree, find the node with the next largest value. Assume you don't have the root of the tree, just a single node from it.
 
 
