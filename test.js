@@ -243,7 +243,9 @@ function LinkedList(){
 		curr = node;
 	};
 
-	this.deleteStart= function() {}
+	this.deleteStart= function() {
+		
+	}
 	this.deleteEnd= function() {}
 	this.deleteAt= function(index) {}
 
